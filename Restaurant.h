@@ -8,6 +8,7 @@ namespace sdds {
 	class Restaurant {
 		Reservation* res_res{ nullptr }; // a dynamically allocated array of objects of type `Reservation`: `Reservation*`
 		size_t res_num;
+		size_t CALL_CNT{0};
 	public:
 		Restaurant();
 		Restaurant(const Reservation* reservations[], size_t cnt); // a constructor that receives as a parameter an array of pointers to objects of type `Reservation`
