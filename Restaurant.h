@@ -10,12 +10,12 @@ namespace sdds {
 		size_t res_num;
 	public:
 		Restaurant();
-		Restaurant(Reservation* reservations[], size_t cnt); // a constructor that receives as a parameter an array of pointers to objects of type `Reservation`
+		Restaurant(const Reservation* reservations[], size_t cnt); // a constructor that receives as a parameter an array of pointers to objects of type `Reservation`
 		
 		Restaurant(const Restaurant& src);
 		Restaurant& operator=(const Restaurant& src);
-		Restaurant(Restaurant&& src);
-		Restaurant& operator=(Restaurant&& src);
+		Restaurant(Restaurant&& src) noexcept;
+		Restaurant& operator=(Restaurant&& src) noexcept;
 		
 		size_t size() const; // a query that returns the number of reservations in the system.
 		~Restaurant();

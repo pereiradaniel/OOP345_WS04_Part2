@@ -13,7 +13,7 @@ namespace sdds {
 
 		ConfirmationSender& operator=(const ConfirmationSender& src);
 		ConfirmationSender(const ConfirmationSender& src);
-		ConfirmationSender operator=(ConfirmationSender&& src) noexcept;
+		ConfirmationSender& operator=(ConfirmationSender&& src) noexcept;
 		ConfirmationSender(ConfirmationSender&& src) noexcept;
 
 		ConfirmationSender& operator +=(const Reservation& res); // adds the reservation `res` to the array by adding its address.
