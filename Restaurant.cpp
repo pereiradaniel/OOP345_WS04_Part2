@@ -55,7 +55,7 @@ namespace sdds {
 		static size_t CALL_CNT;
 		++CALL_CNT;
 		os << "--------------------------\n"
-			<< "Fancy Restaurant " << CALL_CNT << "\n"
+			<< "Fancy Restaurant (" << CALL_CNT << ")\n"
 			<< "--------------------------\n";
 
 		if (copy.res_num == 0) {
